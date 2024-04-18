@@ -10,7 +10,9 @@ header {
     color: #ff0202;
     padding: 20px;
     text-align: center;
-    text-shadow: #2c2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header h1 {
     font-family: cursive;
@@ -19,6 +21,10 @@ header h1 {
     margin: auto;
     padding: auto;
     word-spacing: 50% ;
+}
+.logo-left img,
+.logo-right img{
+    max-height: 40px;
 }
 
 nav ul {
