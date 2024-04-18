@@ -22,6 +22,12 @@ header h1 {
     padding: auto;
     word-spacing: 50% ;
 }
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    color: rgb(38, 34, 34);
+    text-justify: newspaper;
+}
 .logo-left img,
 .logo-right img{
     max-height: 700px;
@@ -75,5 +81,7 @@ footer {
     margin-bottom:auto;
 }
 #about{
-    font-size: 200%;
+    font-size: 180%;
+    background-color: rgb(250, 250, 250);
+
 }
