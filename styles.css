@@ -22,6 +22,7 @@ header h1 {
     padding: auto;
     word-spacing: 50% ;
 }
+
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
@@ -37,6 +38,7 @@ h2{
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -45,9 +47,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #031932;
     text-decoration: none;
+    transition: color 0.3s;
 }
+nav ul li a:hover{
+    color: hsl(236, 100%, 50%);
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(51, 51, 51, 0.9); /* Fond semi-transparent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
 
 section {
     padding: 40px;
