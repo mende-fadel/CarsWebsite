@@ -24,7 +24,8 @@ header h1 {
 }
 .logo-left img,
 .logo-right img{
-    max-height: 40px;
+    max-height: 700px;
+    border-image-width: auto;
 }
 
 nav ul {
