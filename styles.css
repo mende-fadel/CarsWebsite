@@ -35,25 +35,37 @@ h2{
     border-image-width: auto;
 }
 
-nav ul {
+.navigation {
+    text-align: center; /* Centrer les éléments horizontalement */
+}
+
+.navigation nav {
+    background-color: #c6cace;
+    font-size: 200%;
+}
+
+.navigation nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 1%;
+    margin: 1%;
+    display: inline; /* Pour centrer les éléments de la liste horizontalement */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.navigation nav ul li {
+    display: inline-flex;
+    margin-right: 100px;
 }
 
-nav ul li a {
-    color: #031932;
+.navigation nav ul li a {
+    color: #0e233c;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.8s;
 }
-nav ul li a:hover{
-    color: hsl(236, 100%, 50%);
+
+.navigation nav ul li a:hover {
+    color: hsl(58, 100%, 52%);
 }
+
 .fixed-nav {
     position: fixed;
     top: 0;
