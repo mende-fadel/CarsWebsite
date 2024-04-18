@@ -13,6 +13,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 header h1 {
     font-family: cursive;
@@ -34,6 +37,32 @@ h2{
     max-height: 700px;
     border-image-width: auto;
 }
+
+/* Ajoutez ces styles CSS pour l'animation de la flèche vers le bas */
+.scroll-down {
+    position: absolute;
+    bottom: 20px; /* Ajustez la position verticale selon vos besoins */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite; /* Applique une animation de rebondissement */
+}
+
+.scroll-down img {
+    width: 150px; /* Ajustez la taille de l'icône selon vos besoins */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Déplace la flèche vers le haut */
+    }
+    60% {
+        transform: translateY(-5px); /* Déplace la flèche vers le bas */
+    }
+}
+
 
 .navigation {
     text-align: center; /* Centrer les éléments horizontalement */
@@ -57,13 +86,13 @@ h2{
 }
 
 .navigation nav ul li a {
-    color: #0e233c;
+    color: #0f0f0f;
     text-decoration: none;
     transition: color 0.8s;
 }
 
 .navigation nav ul li a:hover {
-    color: hsl(58, 100%, 52%);
+    color: hsl(329, 98%, 47%);
 }
 
 .fixed-nav {
@@ -78,7 +107,8 @@ h2{
 
 
 section {
-    padding: 40px;
+    padding: 10px;
+    
 }
 section h2{
     text-align: center;
@@ -101,15 +131,44 @@ section h2{
     height: auto;
 }
 
-footer {
-    background-color: #e50645;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-    margin-bottom:auto;
+/* CSS pour le footer */
+.footer-content {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
+
+.footer-section h3 {
+    margin-bottom: 25px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-social-media a img {
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+}
+footer p{
+    text-align: center;
+}
+
+#contact{
+    background-color: #f6f6f678;
+}
+
 #about{
     font-size: 180%;
-    background-color: rgb(250, 250, 250);
+    background-color: #fff;
 
 }
