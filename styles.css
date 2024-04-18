@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+}
+
+header {
+    background-color:#fff;
+    color: #ff0202;
+    padding: 20px;
+    text-align: center;
+    text-shadow: #2c2a2a;
+}
+header h1 {
+    font-family: cursive;
+    font-size: 500% ;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    word-spacing: 50% ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+section h2{
+    text-align: center;
+    text-overflow: clip;
+    font-size: 200%;
+
+}
+.car-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.car {
+    flex:0 0 calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.car img {
+    max-width: 60%;
+    height: auto;
+}
+
+footer {
+    background-color: #e50645;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-bottom:auto;
+}
