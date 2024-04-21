@@ -6,9 +6,11 @@ body {
 }
 
 header {
-    background-color:#e4e0e0;
+    background-color:#100f106c;
     background-image:url(cars/audi.png);
-    color: #031932;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #03264b;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -58,7 +60,7 @@ header h1 {
 /* Ajoutez ces styles CSS pour l'animation de la flèche vers le bas */
 .scroll-down {
     position: absolute;
-    bottom: 150px; /* Ajustez la position verticale selon vos besoins */
+    bottom: 40px; /* Ajustez la position verticale selon vos besoins */
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 0.5s infinite; /* Applique une animation de rebondissement */
@@ -149,8 +151,9 @@ section h2{
 
 .car img {
     max-width: 80%;
-    height: 50%;
+    height: 60%;
 }
+
 
 /* CSS pour le footer */
 .footer-content {
@@ -193,12 +196,12 @@ footer p{
 }
 
 #contact{
-    background-color: #e4e0e0;
+    background-color: #100f106c;
 }
 
 #about{
-    font-size: 180%;
-    background-color: #e4e0e0;
+    font-size: 150%;
+    background-color: #100f106c;
 
 }
 #cars{
