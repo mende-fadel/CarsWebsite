@@ -48,3 +48,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ajoutez des écouteurs d'événements de clic pour d'autres marques de voiture si nécessaire
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.getElementById("header");
+    const images = ["cars/audi.png", "cars/Luxury-Car-PNG-Images-HD.png","cars/pexels-mike-noga-3541743.jpg"]; // Remplacez ces noms d'image par les noms de vos propres images
+    let currentIndex = 0;
+
+    // Fonction pour changer l'image de fond
+    function changeBackgroundImage() {
+        header.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % images.length; // Incrémente l'index et assure la boucle sur les images
+    }
+
+    // Appel de la fonction pour la première fois
+    changeBackgroundImage();
+
+    // Appeler la fonction toutes les secondes pour changer l'image de fond
+    setInterval(changeBackgroundImage, 5000); // 1000 millisecondes = 1 seconde
+});
+
+
