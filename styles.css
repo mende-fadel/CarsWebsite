@@ -6,7 +6,8 @@ body {
 }
 
 header {
-    background-color:#fff;
+    background-color:hsl(0, 2%, 62%);
+    background-image:url(cars/audi.png);
     color: #031932;
     padding: 20px;
     text-align: center;
@@ -19,28 +20,38 @@ header {
 }
 header h1 {
     font-family: cursive;
-    font-size: 500% ;
-    text-align: center;
-    margin: auto;
-    padding: auto;
+    font-size: 800% ;
+    text-align:center;
     word-spacing: 50% ;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
 }
 
-h2{
+ h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-    color: rgb(38, 34, 34);
+    color: rgb(11, 11, 11);
     text-justify: newspaper;
+    
 }
 
-.logo-left,
-.logo-right {
-    flex: 0 0 auto;
+.logo-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo-right{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .logo-left img,
 .logo-right img{
-    max-height: 700px;
+    max-height: 500px;
     border-image-width: auto;
 }
 
@@ -54,7 +65,7 @@ h2{
 }
 
 .scroll-down img {
-    width: 150px; /* Ajustez la taille de l'icône selon vos besoins */
+    width: 200px; /* Ajustez la taille de l'icône selon vos besoins */
 }
 
 @keyframes bounce {
@@ -78,7 +89,7 @@ h2{
 
 .navigation nav {
     background-color: #c6cace;
-    font-size: 200%;
+    font-size: 100%;
 }
 
 .navigation nav ul {
@@ -182,11 +193,45 @@ footer p{
 }
 
 #contact{
-    background-color: #f6f6f678;
+    background-color: hsl(0, 2%, 62%);
 }
 
 #about{
     font-size: 180%;
-    background-color: #fff;
+    background-color: hsl(0, 2%, 62%);;
 
 }
+
+
+/* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px; /* Réduire le padding du header pour les écrans de taille moyenne */
+    }
+    header h1 {
+        font-size: 500%; /* Réduire la taille de la police du titre pour les écrans de taille moyenne */
+    }
+    .scroll-down img {
+        width: 80px; /* Ajuster la taille de l'icône de défilement pour les écrans de taille moyenne */
+    }
+    .navigation nav ul li {
+        margin-right: 50px; /* Réduire l'espacement entre les éléments de navigation pour les écrans de taille moyenne */
+    }
+}
+
+/* Styles pour les petits écrans (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 5px; /* Réduire le padding du header pour les petits écrans */
+    }
+    header h1 {
+        font-size: 300%; /* Réduire la taille de la police du titre pour les petits écrans */
+    }
+    .scroll-down img {
+        width: 60px; /* Ajuster la taille de l'icône de défilement pour les petits écrans */
+    }
+    .navigation nav ul li {
+        margin-right: 20px; /* Réduire davantage l'espacement entre les éléments de navigation pour les petits écrans */
+    }
+}
+
