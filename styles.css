@@ -32,6 +32,12 @@ h2{
     color: rgb(38, 34, 34);
     text-justify: newspaper;
 }
+
+.logo-left,
+.logo-right {
+    flex: 0 0 auto;
+}
+
 .logo-left img,
 .logo-right img{
     max-height: 700px;
@@ -66,6 +72,8 @@ h2{
 
 .navigation {
     text-align: center; /* Centrer les éléments horizontalement */
+    background-color: #c6cace;
+    font-size: 200%;
 }
 
 .navigation nav {
@@ -117,10 +125,12 @@ section h2{
 
 }
 .car-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes dynamiques avec largeur minimale de 300px */
+    gap: 20px; /* Espacement entre les voitures */
+    padding: 20px;
 }
+
 .car {
     flex:0 0 calc(33.33% - 20px);
     margin-bottom: 40px;
@@ -159,8 +169,16 @@ section h2{
     height: 35px;
     margin-right: 25px;
 }
+/* Mise en page du footer avec Flexbox */
+footer {
+    background-color: #e50645;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
 footer p{
     text-align: center;
+    margin: 0;
 }
 
 #contact{
