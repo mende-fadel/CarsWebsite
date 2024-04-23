@@ -10,7 +10,7 @@ header {
     background-image:url(cars/audi.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #03264b;
+    color: #292d68;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -53,7 +53,10 @@ header h1 {
 
 .logo-left img,
 .logo-right img{
-    max-height: 500px;
+    background-image:url(cars/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 400px;
     border-image-width: auto;
 }
 
@@ -214,12 +217,17 @@ footer p{
 @media screen and (max-width: 1412px) {
     header {
         padding: 10px; /* Réduire le padding du header pour les écrans de taille moyenne */
+        background-size: contain;
     }
     header h1 {
-        font-size: 300%; /* Réduire la taille de la police du titre pour les écrans de taille moyenne */
+        font-size: 450%; /* Réduire la taille de la police du titre pour les écrans de taille moyenne */
+    }
+    .logo-left img,
+    .logo-right img{
+        background-size: contain;
     }
     .scroll-down img {
-        width: 30px; /* Ajuster la taille de l'icône de défilement pour les écrans de taille moyenne */
+        width: 50px; /* Ajuster la taille de l'icône de défilement pour les écrans de taille moyenne */
     }
     .navigation nav ul li {
         margin-right: 30px; /* Réduire l'espacement entre les éléments de navigation pour les écrans de taille moyenne */
@@ -230,9 +238,14 @@ footer p{
 @media screen and (max-width: 848px) {
     header {
         padding: 5px; /* Réduire le padding du header pour les petits écrans */
+        background-size: contain;
     }
     header h1 {
-        font-size: 200%; /* Réduire la taille de la police du titre pour les petits écrans */
+        font-size: 400%; /* Réduire la taille de la police du titre pour les petits écrans */
+    }
+    .logo-left img,
+    .logo-right img{
+        background-size: contain;
     }
     .scroll-down img {
         width: 40px; /* Ajuster la taille de l'icône de défilement pour les petits écrans */
