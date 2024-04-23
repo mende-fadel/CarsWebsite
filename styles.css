@@ -211,34 +211,34 @@ footer p{
 
 
 /* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1412px) {
     header {
         padding: 10px; /* Réduire le padding du header pour les écrans de taille moyenne */
     }
     header h1 {
-        font-size: 500%; /* Réduire la taille de la police du titre pour les écrans de taille moyenne */
+        font-size: 300%; /* Réduire la taille de la police du titre pour les écrans de taille moyenne */
     }
     .scroll-down img {
-        width: 80px; /* Ajuster la taille de l'icône de défilement pour les écrans de taille moyenne */
+        width: 30px; /* Ajuster la taille de l'icône de défilement pour les écrans de taille moyenne */
     }
     .navigation nav ul li {
-        margin-right: 50px; /* Réduire l'espacement entre les éléments de navigation pour les écrans de taille moyenne */
+        margin-right: 30px; /* Réduire l'espacement entre les éléments de navigation pour les écrans de taille moyenne */
     }
 }
 
 /* Styles pour les petits écrans (par exemple, smartphones) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 848px) {
     header {
         padding: 5px; /* Réduire le padding du header pour les petits écrans */
     }
     header h1 {
-        font-size: 300%; /* Réduire la taille de la police du titre pour les petits écrans */
+        font-size: 200%; /* Réduire la taille de la police du titre pour les petits écrans */
     }
     .scroll-down img {
-        width: 60px; /* Ajuster la taille de l'icône de défilement pour les petits écrans */
+        width: 40px; /* Ajuster la taille de l'icône de défilement pour les petits écrans */
     }
     .navigation nav ul li {
-        margin-right: 20px; /* Réduire davantage l'espacement entre les éléments de navigation pour les petits écrans */
+        margin-right: 10px; /* Réduire davantage l'espacement entre les éléments de navigation pour les petits écrans */
     }
 }
 
