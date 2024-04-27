@@ -142,14 +142,17 @@ section h2{
 }
 .car-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes dynamiques avec largeur minimale de 300px */
-    gap: 20px; /* Espacement entre les voitures */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Colonnes dynamiques avec largeur minimale de 300px */
+    gap: 40px; /* Espacement entre les voitures */
     padding: 20px;
 }
 
 .car {
-    flex:0 0 calc(33.33% - 20px);
+    flex:0 0 calc(33.33% - 30px);
     margin-bottom: 40px;
+}
+.car h3 {
+    color: #e50645;
 }
 
 .car img {
