@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color:#100f106c;
+    background-color:#3530525d;
     background-image:url(cars/audi.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,7 +143,7 @@ section h2{
 .car-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Colonnes dynamiques avec largeur minimale de 300px */
-    gap: 40px; /* Espacement entre les voitures */
+    gap: 50px; /* Espacement entre les voitures */
     padding: 20px;
 }
 
